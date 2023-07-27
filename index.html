@@ -1,8 +1,36 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="/index.js" type="module"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Dog Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="header-icon" src="images/icon-profile.png" alt="profile icon">
+            <img class="header-icon logo" src="images/logo.png" alt="logo icon">
+            <img class="header-icon chat" src="images/icon-chat.png" alt="chat icon">
+        </header>
+        <main>
+            <img class="dog-picture"src="images/dog-teddy.jpg" alt="">
+            <div class="dog-info">
+                <h1>Teddy, 30</h1>
+                <h3>How you doin?</h3>
+            </div>
+        <!-- the images will be loaded through js -->
+        </main>
+        <footer>
+            <div class="button-div dislike">
+                <img class="button-selector"src="images/icon-cross.png" alt="icon for selecting not liking a picture">
+            </div>
+            <div class="button-div like">
+                <img class="button-selector" src="images/icon-heart.png" alt="icon for selectin liking a picture">
+            </div>
+        </footer>
+    </div>
+    <script src="js/index.js" type="module"></script>
+</body>
 </html>

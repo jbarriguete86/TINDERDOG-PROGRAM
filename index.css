@@ -1,0 +1,92 @@
+*{
+ box-sizing: border-box;   
+}
+
+.container, 
+header, 
+main, 
+footer,
+.button-div,
+.dog-info{
+    display: flex;
+}
+
+.container{
+    width: 550px;
+    height: 100vh;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 18px;
+}
+
+/* Header section */
+header{
+    height: 81px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icon{
+    width: 32px;
+    height: 34px;
+}
+
+.logo{
+    width: 84px;
+}
+
+.chat{
+    width: 34px;
+}
+/* Main section */
+
+main{
+    margin-top: 24px;
+    position: relative;
+}
+.dog-picture{
+    
+    width: 100%;
+    border-radius: 50px;
+}
+
+.dog-info{
+    position: absolute;
+    flex-direction: column;
+    width: 176px;
+    background-color: red;
+    color:white;
+    margin-bottom: auto;
+    
+}
+
+/* Footer */
+
+footer{
+ margin: 24px auto 0;
+ gap: 24px;
+ 
+}
+
+.button-div{
+    width: 91.87px;
+    height: 91.87px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.like:hover{
+    background-color: #DBFFF4;
+
+}
+
+.dislike:hover{
+    background-color: #FFE7EF;
+}
+.button-selector{
+    width: 30px;
+    height: 30px;
+    
+}
