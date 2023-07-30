@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;  
+    font-size: 1.25rem;  
 }
 
 .container, 
@@ -34,12 +34,12 @@ header{
 }
 
 .header-icon{
-    width: 32px;
-    height: 34px;
+    width: 8%;
+    height: 80%;
 }
 
 .logo{
-    width: 84px;
+    width: 20%;
 }
 
 .chat{
@@ -63,7 +63,7 @@ main{
 .dog-info{
     position: absolute;
     flex-direction: column;
-    width: 276px;
+    width: 60%;
     color:white;
     left: 20px;
     bottom: 20px;    
