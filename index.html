@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -18,27 +20,35 @@
             <img class="header-icon logo" src="images/logo.png" alt="logo icon">
             <img class="header-icon chat" src="images/icon-chat.png" alt="chat icon">
         </header>
+
         <main>
-            <img class="dog-picture"src="images/dog-teddy.jpg" alt="">
+            <!-- the images will be loaded through js -->
+
+            <img class="dog-picture" src="images/dog-teddy.jpg" alt="">
+
             <div class="status">
-                <img class="status-img"src="images/badge-like.png" alt="liked image">
+                <img class="status-img" src="images/badge-like.png" alt="liked image">
             </div>
-            <div class="dog-info">
+            <div id="dog-info" class="dog-info">
                 <h1 class="dog-title">Teddy, 30</h1>
                 <h3 class="dog-bio">How you doin?</h3>
             </div>
-        
-        <!-- the images will be loaded through js -->
         </main>
+
         <footer>
-            <div class="button-div dislike">
-                <img class="button-selector"src="images/icon-cross.png" alt="icon for selecting not liking a picture">
+            <div class="button-container">
+                <div class="button-div dislike">
+                    <img class="button-selector" src="images/icon-cross.png"
+                        alt="icon for selecting not liking a picture">
+                </div>
+                <div class="button-div like">
+                    <img class="button-selector" src="images/icon-heart.png" alt="icon for selectin liking a picture">
+                </div>
             </div>
-            <div class="button-div like">
-                <img class="button-selector" src="images/icon-heart.png" alt="icon for selectin liking a picture">
-            </div>
+
         </footer>
     </div>
-    <script src="js/index.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
+
 </html>

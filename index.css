@@ -1,127 +1,121 @@
-*{
- box-sizing: border-box;   
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.25rem;  
+    font-size: 1.25rem;
+    margin: 0;
+    background-color: #f5f5f5;
 }
 
-.container, 
-header, 
-main, 
-footer,
-.button-div,
-.dog-info{
+.container,
+header,
+main,
+.dog-info,
+.button-container,
+.button-div {
     display: flex;
 }
 
-.container{
-    background: #f8f8f8;
-    width: 28%;
-    height: 100vh;
+.container {
     flex-direction: column;
+    max-width: 550px;
+    padding: .40em .40em 0;
     margin: auto;
-    padding: 0 0.750em;
 }
 
-/* Header section */
-header{
-    margin-top: 1em;
-    height: 9%;
+/* HEADER */
+header {
+    z-index: 1;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: .45em;
 }
 
-.header-icon{
-    width: 8%;
-    height: 80%;
+.header-icon {
+    width: 15%;
 }
 
-.logo{
-    width: 20%;
+.logo {
+    width: 25%;
 }
 
-.chat{
-    width: 34px;
-}
-/* Main section */
-
-main{
-    margin-top: 24px;
+/* MAIN */
+main {
     position: relative;
-    border-width: 2px;
-    border: 1px solid blue;
 }
 
-.dog-picture{
-    
+.dog-picture {
     width: 100%;
     border-radius: 50px;
+    ;
 }
 
-.dog-info{
+.dog-info {
     position: absolute;
     flex-direction: column;
-    width: 60%;
-    color:white;
-    left: 20px;
-    bottom: 20px;    
-}
-
-.status{
-    width: 233px;
-    height: 116.26px;
-    position: absolute;
-    top: 56px;
-    left: 27px;
+    bottom: 0.80em;
+    left: 1em;
 
 }
 
-.status-img{
- width: 100%;
- transform: rotate(-30deg);
-}
-
-.dog-info h1,
-.dog-info, h3{
+.dog-title,
+.dog-bio {
     margin: 0;
 }
 
-.dog-bio{
-    margin-top: 7px;
-    font-size: 24px;
+.dog-title {
+    color: #F8F8F8;
+}
+
+.dog-bio {
     color: #B7B7B7;
-    font-weight: lighter;
 }
 
-/* Footer */
-
-footer{
- margin: 24px auto 0;
- gap: 24px;
- 
+.status {
+    z-index: 0;
+    /*Hide the status in case the equipment is really little*/
+    position: absolute;
+    top: -0.80em;
+    transform: rotate(-30deg);
 }
 
-.button-div{
+.status-img {
+    width: 45%;
+}
+
+/* FOOTER */
+
+.button-container {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.button-div {
     width: 91.87px;
     height: 91.87px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     background-color: white;
     border-radius: 100%;
+
 }
 
-.like:hover{
+.like:hover {
     background-color: #DBFFF4;
 
 }
 
-.dislike:hover{
+.dislike:hover {
     background-color: #FFE7EF;
 }
-.button-selector{
+
+.button-selector {
     width: 30px;
     height: 30px;
-    
+
 }
