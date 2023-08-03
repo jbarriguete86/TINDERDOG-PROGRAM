@@ -1,5 +1,4 @@
 import dogs from "./data.js"
-import { setSwipedStatus } from "./utils.js"
 
 class Dog {
     constructor(data){
