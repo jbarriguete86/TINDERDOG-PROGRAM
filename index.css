@@ -16,7 +16,8 @@ header,
 main,
 .dog-info,
 .button-container,
-.button-div {
+.button-div,
+.last-container {
     display: flex;
 }
 
@@ -129,6 +130,22 @@ main {
     width: 30px;
     height: 30px;
 
+}
+
+/* LAST CONTAINER */
+.last-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-container h1{
+    color: red;
+    font-size: 3rem;
+}
+
+.dog-emoji{
+    font-size: 3rem;;
 }
 
 /* MEDIA QUERIES */
