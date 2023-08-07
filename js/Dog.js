@@ -10,7 +10,6 @@ class Dog {
         } else {
             this.hasBeenSwiped = false
         }
-        console.log(`The swiped status is ${this.hasBeenSwiped}`)
     }
     setLikedStatus(){
         if(!this.hasBeenLiked){
@@ -18,7 +17,6 @@ class Dog {
         } else{
             this.hasBeenLiked = false
         }
-        console.log(this.hasBeenLiked)
         }
     getDogHtml(){
         const {name, avatar, age, bio, hasBeenLiked, hasBeenSwiped} = this
