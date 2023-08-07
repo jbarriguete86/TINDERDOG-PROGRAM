@@ -1,4 +1,4 @@
-import dogs from "./data.js"
+import {dogs, dogsCopy} from "./data.js"
 
 class Dog {
     constructor(data){
@@ -35,6 +35,7 @@ class Dog {
             `
     }
 }
+
 
 
 export default Dog

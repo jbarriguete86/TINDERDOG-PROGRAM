@@ -25,6 +25,8 @@ const dogs = [
     }
 ]
 
-export default dogs
+const dogsCopy = JSON.parse(JSON.stringify(dogs));
+
+export {dogsCopy, dogs}
 
 // Remember to export the data!
